@@ -1,1 +1,6 @@
-# impala_krb5
+```
+# ./entrypoint.sh
+# su - impdev
+$ ./entrypoint.sh
+$ impala-shell.sh
+```

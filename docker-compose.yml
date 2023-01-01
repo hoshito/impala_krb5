@@ -1,0 +1,13 @@
+version: "3.5"
+
+networks:
+  default:
+    name: study
+services:
+  main:
+    hostname: local.dev
+    build:
+      context: ./main
+      dockerfile: ./Dockerfile
+    tty: true
+
