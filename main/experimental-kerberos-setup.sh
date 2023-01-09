@@ -104,12 +104,12 @@ add_principal $USER/admin@$MINIKDC_REALM
 # Add service principals.
 for svc in $USER hdfs mapred yarn HTTP hive hbase zookeeper impala impala-be
 do
-  add_service_principal $svc/local.dev@$MINIKDC_REALM
+  add_service_principal $svc/main.local@$MINIKDC_REALM
 done
 
 # Kinit as the regular users.
 sudo chown $USER $KRB5_KTNAME
-kinit -kt $KRB5_KTNAME $USER/local.dev@$MINIKDC_REALM
+kinit -kt $KRB5_KTNAME $USER/main.local@$MINIKDC_REALM
 
 echo "Keytab contents:"
 klist -kt $KRB5_KTNAME

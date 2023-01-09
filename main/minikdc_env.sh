@@ -45,16 +45,16 @@ export MINIKDC_REALM=${MINIKDC_ORG}.${MINIKDC_DOMAIN}
 #   came up fine, but some of the test code fell over.  Plus you have to tell
 #   the impala shell that the principal isn't 'impala'.
 #
-export MINIKDC_PRINC_HDFS=hdfs/local.dev@${MINIKDC_REALM}
-export MINIKDC_PRINC_MAPR=mapred/local.dev@${MINIKDC_REALM}
-export MINIKDC_PRINC_YARN=yarn/local.dev@${MINIKDC_REALM}
-export MINIKDC_PRINC_HTTP=HTTP/local.dev@${MINIKDC_REALM}
-export MINIKDC_PRINC_HIVE=hive/local.dev@${MINIKDC_REALM}
-export MINIKDC_PRINC_HBSE=hbase/local.dev@${MINIKDC_REALM}
-export MINIKDC_PRINC_ZOOK=zookeeper/local.dev@${MINIKDC_REALM}
-export MINIKDC_PRINC_IMPALA=impala/local.dev@${MINIKDC_REALM}
-export MINIKDC_PRINC_IMPALA_BE=impala-be/local.dev@${MINIKDC_REALM}
-export MINIKDC_PRINC_USER=${USER}/local.dev@${MINIKDC_REALM}
+export MINIKDC_PRINC_HDFS=hdfs/main.local@${MINIKDC_REALM}
+export MINIKDC_PRINC_MAPR=mapred/main.local@${MINIKDC_REALM}
+export MINIKDC_PRINC_YARN=yarn/main.local@${MINIKDC_REALM}
+export MINIKDC_PRINC_HTTP=HTTP/main.local@${MINIKDC_REALM}
+export MINIKDC_PRINC_HIVE=hive/main.local@${MINIKDC_REALM}
+export MINIKDC_PRINC_HBSE=hbase/main.local@${MINIKDC_REALM}
+export MINIKDC_PRINC_ZOOK=zookeeper/main.local@${MINIKDC_REALM}
+export MINIKDC_PRINC_IMPALA=impala/main.local@${MINIKDC_REALM}
+export MINIKDC_PRINC_IMPALA_BE=impala-be/main.local@${MINIKDC_REALM}
+export MINIKDC_PRINC_USER=${USER}/main.local@${MINIKDC_REALM}
 
 # Basic directory setup:
 MINIKDC_SCRATCH_ROOT=${MINIKDC_SCRATCH_ROOT-${IMPALA_CLUSTER_LOGS_DIR}}
