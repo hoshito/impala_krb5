@@ -18,8 +18,8 @@ COPY kadm5.acl /etc/krb5kdc/kadm5.acl
 COPY root_entrypoint.sh /root/work/entrypoint.sh
 COPY impdev_entrypoint.sh /home/impdev/entrypoint.sh
 
-COPY nifi-1.17.0-bin.zip /root/work
-RUN apt install -y unzip && unzip nifi-1.17.0-bin.zip
+#COPY nifi-1.17.0-bin.zip /root/work
+#RUN apt install -y unzip && unzip nifi-1.17.0-bin.zip
 #COPY nifi.properties /root/work/nifi-1.17.0/conf
 
 CMD /bin/bash
